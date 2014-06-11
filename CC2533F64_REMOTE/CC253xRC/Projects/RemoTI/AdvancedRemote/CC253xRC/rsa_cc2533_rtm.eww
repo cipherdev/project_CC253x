@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\rsa_cc2533_rtm.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Build All</name>
+      <member>
+        <project>rsa_cc2533_rtm</project>
+        <configuration>CC2533F64</configuration>
+      </member>
+      <member>
+        <project>rsa_cc2533_rtm</project>
+        <configuration>CC2533F64-HEX</configuration>
+      </member>
+      <member>
+        <project>rsa_cc2533_rtm</project>
+        <configuration>CC2533F96</configuration>
+      </member>
+      <member>
+        <project>rsa_cc2533_rtm</project>
+        <configuration>CC2533F96-HEX</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+
