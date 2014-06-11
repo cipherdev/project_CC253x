@@ -1,0 +1,246 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  File:  Modeled upon lnk51ew_cc2530b_PG2_0.xcl
+//
+//  Description:
+//    This is a extended command line file for XLINK tool to be used when
+//    debug applications written for the TI CC2530.
+//
+//    Works with CC2530 PG2.0
+//
+//  Important:
+//    Data cannot be located at address zero, this address is reserved for
+//    the null pointer.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Variables (used by lnk_base.xcl)
+// ================================
+//
+// Segment limits
+// --------------
+//
+//
+//    IDATA
+//
+-D_IDATA_END=0xFF              // Last address of Idata memory
+//
+//
+//    XDATA
+//
+// The internal XDATA is used as XDATA.
+// Address 0x0000 is reserved for boot loader.
+-D_XDATA_START=0x0001
+-D_XDATA_END=0x1EFF
+// Note that IDATA is overlayed to XDATA 0x1F00 - 0x1FFF
+// XDATA size can be adjusted if IDATA is not used to its full address space.
+
+//
+//
+//    CODE
+//
+-D_CODE_START=0x1800
+-D_CHECKSUM_START=0x1890
+-D_CHECKSUM_END=0x1894
+-D_CODE_END=0x7FFF             // Last address for ROOT bank.
+//
+-D_FIRST_BANK_ADDR=0x10000
+//
+// Include these three lines when generating a .hex file for banked code model:
+//-M(CODE)[(_CODEBANK_START+_FIRST_BANK_ADDR)-(_CODEBANK_END+_FIRST_BANK_ADDR)]*\
+//_NR_OF_BANKS+_FIRST_BANK_ADDR=0x8000
+//-ww69=i
+//
+//
+//
+// Special SFRs
+// ------------
+//
+//    Register bank setup
+//
+-D?REGISTER_BANK=0             // Default register bank (0,1,2,3).
+-D_REGISTER_BANK_START=0       // Start address for default register bank (00,08,10,18).
+//
+//
+//    PDATA page setup
+//    ----------------
+-D?PBANK_NUMBER=0x1E           // High byte of 16-bit address to the PDATA area.
+//
+//
+//    Virtual register setup
+//    ----------------------
+//
+-D_BREG_START=0x00             // The bit address where the BREG segments starts.
+                               // Must be placed on: _BREG_START%8=0 where _BREG_START <= 0x78.
+-D?VB=0x20                     // ?VB is used when referencing BREG as whole byte.
+                               // Must be placed on: ?VB=0x20+_BREG_START/8.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// IDATA memory
+//
+
+// Setup "bit" segments (only for '__no_init bool' variables).
+-Z(BIT)BREG=_BREG_START
+-Z(BIT)BIT_N=0-7F
+
+-Z(DATA)REGISTERS+8=_REGISTER_BANK_START
+-Z(DATA)BDATA_Z,BDATA_N,BDATA_I=20-2F
+-Z(DATA)VREG+_NR_OF_VIRTUAL_REGISTERS=08-7F
+-Z(DATA)PSP,XSP=08-7F
+-Z(DATA)DOVERLAY=08-7F
+-Z(DATA)DATA_I,DATA_Z,DATA_N=08-7F
+
+-U(IDATA)0-7F=(DATA)0-7F
+-Z(IDATA)IDATA_I,IDATA_Z,IDATA_N=08-_IDATA_END
+-Z(IDATA)ISTACK+_IDATA_STACK_SIZE#08-_IDATA_END
+-Z(IDATA)IOVERLAY=08-FF
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// ROM memory
+//
+//
+//
+// Program memory
+//
+// Ignore linker warnings for placing the INTVEC at 0x800
+-we18=i
+-Z(CODE)INTVEC=_CODE_START
+-P(CODE)CHECKSUM_LOCATION=_CHECKSUM_START-_CHECKSUM_END
+-P(CODE)CSTART=_CODE_START-(_CHECKSUM_START-1),_CHECKSUM_END-_CODE_END
+-Z(CODE)BANK_RELAYS=_CODE_START
+-P(CODE)RCODE=_CODE_START-(_CHECKSUM_START-1),_CHECKSUM_END-_CODE_END
+-P(CODE)NEAR_CODE=_CODE_START-(_CHECKSUM_START-1),_CHECKSUM_END-_CODE_END
+
+// Serial boot loader special segment outside boot loader page and preamble page
+-Z(CODE)NON_PREAMBLE_CODE=_CODE_START-(_CHECKSUM_START-1),_CHECKSUM_END-_CODE_END
+
+// Define segments for const data in flash.
+// First the segment with addresses as used by the program (flash mapped as XDATA)
+-P(CONST)XDATA_ROM_C=0x8000-0xFFFF
+
+// Then the segment with addresses as put in the hex file (flash bank 1)
+-P(CODE)XDATA_ROM_C_FLASH=0x18000-0x1FFFF
+
+// Finally link these segments (XDATA_ROM_C_FLASH is the initializer segment for XDATA_ROM_C,
+// we map the flash in the XDATA address range instead of copying the data to RAM)
+-QXDATA_ROM_C=XDATA_ROM_C_FLASH
+
+//
+// Initializers
+//
+-Z(CODE)BIT_ID,BDATA_ID,DATA_ID,IDATA_ID,IXDATA_ID,PDATA_ID,XDATA_ID=_CODE_START-_CODE_END
+
+//
+// Constants located in code memory
+//
+-Z(CODE)CODE_C=_CODE_START-_CODE_END
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// XDATA memory
+//
+
+
+//
+// Stacks located in XDATA
+//
+-Z(XDATA)XSTACK+_XDATA_STACK_SIZE=_XDATA_START-_XDATA_END
+
+
+
+//
+// XDATA - data memory
+//
+-Z(XDATA)XDATA_Z,XDATA_I,PDATA_Z=_XDATA_START-_XDATA_END
+-P(XDATA)XDATA_N=_XDATA_START-_XDATA_END
+
+-cx51
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Texas Instruments device specific
+// =================================
+//
+//
+// Setup of PM0 XDATA
+// ------------------
+//
+-D_PM0_XDATA_START=_XDATA_START
+-D_PM0_XDATA_END=_XDATA_END
+//
+-Z(XDATA)PM0_XDATA=_PM0_XDATA_START-_PM0_XDATA_END
+//
+-Z(CODE)ALIGNED_CODE|2=_CODE_START-_CODE_END
+//
+// Internal flash used for NV address space.
+// ---------------------------
+//
+// Address range for HAL_FLASH_PAGE_SIZE == 2048
+//-D_ZIGNV_ADDRESS_SPACE_START=0x7E800
+//-D_ZIGNV_ADDRESS_SPACE_END=0x7F7FF
+//
+// Address range for HAL_FLASH_PAGE_SIZE == 4096
+-D_ZIGNV_ADDRESS_SPACE_START=0x7D000
+-D_ZIGNV_ADDRESS_SPACE_END=0x7EFFF
+//
+-Z(CODE)ZIGNV_ADDRESS_SPACE=_ZIGNV_ADDRESS_SPACE_START-_ZIGNV_ADDRESS_SPACE_END
+//
+//
+//
+//
+// Setup of CODE banks
+// -------------------
+//
+-D_BANK0_START=0x01800
+-D_BANK0_END=0x07FFF
+//
+-D_BANK1_START=0x18000
+-D_BANK1_END=0x1FFFF
+//
+-D_BANK2_START=0x28000
+-D_BANK2_END=0x2FFFF
+//
+-D_BANK3_START=0x38000
+-D_BANK3_END=0x3FFFF
+//
+-D_BANK4_START=0x48000
+-D_BANK4_END=0x4FFFF
+//
+-D_BANK5_START=0x58000
+-D_BANK5_END=0x5FFFF
+//
+-D_BANK6_START=0x68000
+-D_BANK6_END=0x6FFFF
+//
+-D_BANK7_START=0x78000
+// End of code space has to match that of OSAL NV page start.
+// Note that in this way, we'll be wasting last page spaced by NV pages,
+// but in order not to overwrite NV pages when downloading new image, the waste
+// is inevitable.
+// New OSAL NV driver will move the NV pages to the last pages not wasting
+// last page itself.
+-D_BANK7_END=(_ZIGNV_ADDRESS_SPACE_START-1)
+//
+-P(CODE)BANKED_CODE=_BANK0_START-_BANK0_END,_BANK1_START-_BANK1_END,\
+_BANK2_START-_BANK2_END,_BANK3_START-_BANK3_END,_BANK4_START-_BANK4_END,\
+_BANK5_START-_BANK5_END,_BANK6_START-_BANK6_END,_BANK7_START-_BANK7_END
+//
+//
+//
+// IEEE address space (EUI-64)
+// ---------------------------
+//
+-Z(CODE)IEEE_ADDRESS_SPACE=0x7FFE8-0x7FFEF
+//
+//
+////////////////////////////////////////////////////////////////////////////////

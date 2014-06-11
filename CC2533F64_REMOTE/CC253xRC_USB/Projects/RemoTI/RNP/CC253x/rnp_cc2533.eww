@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\rnp_cc2533.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Build All</name>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64_HEX</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64_I2C</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64_I2C_HEX</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64_I2C_SBL</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64_SBL</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96_HEX</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96_I2C</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96_I2C_HEX</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96_I2C_SBL</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96_SBL</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64_SPI</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64_SPI_HEX</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F64_SPI_SBL</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96_SPI</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96_SPI_HEX</configuration>
+      </member>
+      <member>
+        <project>rnp_cc2533</project>
+        <configuration>CC2533F96_SPI_SBL</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+
