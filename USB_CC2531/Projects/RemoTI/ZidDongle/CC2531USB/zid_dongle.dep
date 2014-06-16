@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3268647855</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\Application\np_main.h</file>
+      <file>$PROJ_DIR$\..\..\common\cc2530\OnBoard.c</file>
+      <file>$PROJ_DIR$\..\Application\np_main.c</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_ada_app_helper.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\rcn\rcn_config.c</file>
+      <file>$PROJ_DIR$\..\Application\zid_dongle.c</file>
+      <file>$PROJ_DIR$\..\Application\zid_dongle.h</file>
+      <file>$PROJ_DIR$\..\Application\zid_proxy.c</file>
+      <file>$PROJ_DIR$\..\Application\zid_proxy.h</file>
+      <file>$PROJ_DIR$\..\Application\zid_usb.c</file>
+      <file>$PROJ_DIR$\..\Application\zid_usb.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Clock.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Memory.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\mcu\cc2530\OSAL_Math.s51</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_PwrMgr.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\mcu\cc2530\osal_snv.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Timers.c</file>
+    </outputs>
+  </configuration>
+  <configuration>
+    <name>Hex</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>SB_image</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

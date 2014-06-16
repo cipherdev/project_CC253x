@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\zid_dongle.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Build All</name>
+      <member>
+        <project>zid_dongle</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>zid_dongle</project>
+        <configuration>Hex</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+
