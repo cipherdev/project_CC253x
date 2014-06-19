@@ -2,18 +2,6 @@
 #define NP_MAIN_H
 /**************************************************************************************************
     Filename:       np_main.h
-    Revised:        $Date: 2011-05-03 14:19:23 -0700 (Tue, 03 May 2011) $
-    Revision:       $Revision: 25853 $
-
-    Description:
-
-    Public interface file for the Network Processor.
-
-    Copyright (c) 2007 by Texas Instruments, Inc.
-    All Rights Reserved.  Permission to use, reproduce, copy, prepare
-    derivative works, modify, distribute, perform, display or sell this
-    software and/or its documentation for any purpose is prohibited
-    without the express written consent of Texas Instruments, Inc.
 **************************************************************************************************/
 
 #ifdef __cplusplus
