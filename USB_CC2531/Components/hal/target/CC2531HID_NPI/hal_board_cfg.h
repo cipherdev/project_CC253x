@@ -1,6 +1,5 @@
 /*
   Filename:       hal_board_cfg.h
- 
 */
 #ifndef HAL_BOARD_CFG_H
 #define HAL_BOARD_CFG_H

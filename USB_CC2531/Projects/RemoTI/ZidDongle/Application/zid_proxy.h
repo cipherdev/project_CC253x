@@ -1,6 +1,5 @@
 /*
   Filename:       zid_proxy.h
-
 */
 #ifndef ZID_PROXY_H
 #define ZID_PROXY_H

@@ -1,6 +1,5 @@
 /*
   Filename:       hal_defs.h
- 
 */
 
 #ifndef HAL_DEFS_H

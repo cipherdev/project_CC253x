@@ -1,6 +1,5 @@
 /*
   Filename:       hal_vddmon.h
- 
 */
 #ifndef HAL_VDDMON_H
 #define HAL_VDDMON_H

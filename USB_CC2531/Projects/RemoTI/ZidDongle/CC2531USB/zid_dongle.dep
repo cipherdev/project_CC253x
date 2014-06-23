@@ -6,29 +6,85 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\..\..\common\cc2530\OnBoard.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\rcn\rcn_config.c</file>
-      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_ada_app_helper.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\LOW_LEVEL\srf04\SINGLE_CHIP\mac_mem.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\LOW_LEVEL\srf04\SINGLE_CHIP\mac_mcu.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\LOW_LEVEL\srf04\SINGLE_CHIP\mac_csp_tx.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\HIGH_LEVEL\mac_spec.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\HIGH_LEVEL\mac_high_level.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\LOW_LEVEL\srf04\mac_assert.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\services\sdata\sdata.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\rcn\rcn_task.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\rti\zid.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\HIGH_LEVEL\mac_rf4ce.h</file>
+      <file>$PROJ_DIR$\..\..\common\nv\nonmigr\nvmigr.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\rcn\rcn_attribs.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\services\saddr\saddr.h</file>
+      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\osal_pwrmgr.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\OSAL_Tasks.h</file>
+      <file>$TOOLKIT_DIR$\inc\ioCC2531.h</file>
+      <file>$PROJ_DIR$\..\..\common\cc2530\OnBoard.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\include\mac_api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_ccm.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
       <file>$PROJ_DIR$\..\Application\np_main.c</file>
+      <file>$PROJ_DIR$\..\Application\np_main.h</file>
+      <file>$PROJ_DIR$\..\..\common\cc2530\OnBoard.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_dma.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_vddmon.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_assert.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\rti.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid_descriptor.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_suspend.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_adc.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_aes.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_assert.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_usb.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid_hooks.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid_reports.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_adaptor.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\OSAL_Memory.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\rti.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\OnBoard.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_proxy.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_led.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_common.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_key.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_dongle.pbd</file>
-      <file>$PROJ_DIR$\Debug\Obj\OSAL_Timers.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\rti_testmode.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid_reports.r51</file>
-      <file>$PROJ_DIR$\Debug\Exe\zid_dongle.d51</file>
-      <file>$PROJ_DIR$\Debug\Obj\rcn_config.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid_hooks.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\gdp.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\np_main.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_drivers.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_vddmon.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_key.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\OSAL_PwrMgr.r51</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\rcn\rcn_nwk.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stddef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_proxy.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_ada_app_helper.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_suspend.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_adc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_ccm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_dma.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_flash.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_aes.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_startup.r51</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_descriptor_parser.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_framework.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\usb\library\usb_framework.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\usb\library\usb_framework_structs.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\usb\library\usb_interrupt.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\usb\library\usb_reg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_standard_requests.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_standard_requests.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\usb\library\usb_suspend.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\usb\usb_board_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\usb\usb_descriptor.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\usb_interrupt.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\usb_suspend.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_adc.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid_class_requests.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_standard_requests.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_common.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_dongle.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid_descriptor.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\OnBoard.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_drivers.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_flash.h</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_ada_app_helper.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\OSAL_Timers.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\OSAL_Memory.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\mac\LOW_LEVEL\srf04\SINGLE_CHIP\mac_radio_defs.h</file>
       <file>$PROJ_DIR$\Debug\Obj\OSAL_Clock.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\zid_adaptor.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\zid_dongle.r51</file>
@@ -43,13 +99,45 @@
       <file>$PROJ_DIR$\Debug\Obj\hal_led.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\usb_framework.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\gdp.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_key.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\OSAL_PwrMgr.r51</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_descriptor_parser.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_drivers.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_key.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_lcd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_led.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_sleep.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_assert.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\common\hal_drivers.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_adc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_batmon.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_timer.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_board.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_defs.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\rti.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_proxy.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_common.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_led.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\OnBoard.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\hal_uart.r51</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\osal_snv.h</file>
       <file>$PROJ_DIR$\Debug\Obj\hal_sleep.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\OSAL_Clock.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\usb_standard_requests.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\rti_testmode.r51</file>
+      <file>$PROJ_DIR$\..\..\Profiles\gdp\gdp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\rti\rti.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\rti\rti.h</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_adaptor.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\rti\rti_constants.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\rti\rti_testmode.c</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_adaptor.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\comdef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\ZComDef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\OSAL.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_key.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\zid_dongle.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\OSAL_Timers.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_descriptor_parser.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\osal_snv.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\usb_zid_class_requests.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\usb_interrupt.r51</file>
@@ -59,125 +147,79 @@
       <file>$PROJ_DIR$\Debug\Obj\zid_usb.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\usb_descriptor_parser.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\hal_ccm.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_startup.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_dma.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_vddmon.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_assert.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\rti.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid_descriptor.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_suspend.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_adc.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_aes.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_assert.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_usb.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid_hooks.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid_reports.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_adaptor.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\usb_interrupt.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\OSAL_Math.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\usb_framework.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\rcn_config.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\np_main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid_class_requests.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_standard_requests.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_common.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_dongle.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_zid_descriptor.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\OnBoard.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_drivers.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_descriptor_parser.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_proxy.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\zid_ada_app_helper.pbi</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_class_requests.c</file>
-      <file>$PROJ_DIR$\..\Application\zid_usb.c</file>
-      <file>$PROJ_DIR$\..\Application\zid_dongle.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_hooks.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\common\hal_drivers.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_reports.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_descriptor.c</file>
-      <file>$PROJ_DIR$\..\Application\zid_proxy.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\common\hal_assert.c</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_class_device.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\osal\include\OSAL_Clock.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\rti\z3d.h</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_aes.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_descriptor_parser.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_dma.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_key.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\usb_suspend.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_aes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\hal_board_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_board_cfg_nano.h</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_ccm.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_framework.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\usb_interrupt.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_standard_requests.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_dma.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_dma.h</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_flash.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_adc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_key.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_led.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\hal_mac_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\hal_mcu.h</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_sleep.c</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_startup.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_led.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Clock.c</file>
-      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_profile.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_PwrMgr.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\rti\rti_testmode.c</file>
-      <file>$PROJ_DIR$\..\..\Profiles\gdp\gdp.h</file>
-      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_common.h</file>
-      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_hid_constants.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\rti\rti.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\usb_suspend.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_adc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_ccm.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_dma.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_flash.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\hal_aes.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\target\CC2531HID_NPI\hal_types.h</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_uart.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_vddmon.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Clock.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL.c</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Memory.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\mcu\cc2530\OSAL_Math.s51</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_PwrMgr.c</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\osal\mcu\cc2530\osal_snv.c</file>
       <file>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Timers.c</file>
       <file>$PROJ_DIR$\..\..\Profiles\gdp\gdp_profile.h</file>
-      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_common.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\rti\rti.h</file>
-      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_adaptor.h</file>
       <file>$PROJ_DIR$\..\..\Profiles\gdp\gdp.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\rti\rti_constants.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\osal\mcu\cc2530\OSAL_Math.s51</file>
-      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_adaptor.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_vddmon.c</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_common.c</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_common.h</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_hid_constants.h</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_profile.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid_reports.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\rti_testmode.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\zid_dongle.d51</file>
+      <file>$PROJ_DIR$\Debug\Obj\gdp.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_drivers.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\np_main.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_zid_hooks.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_vddmon.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\rcn_config.r51</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\common\hal_assert.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\COMPONENTS\hal\include\hal_vddmon.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_class_requests.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_class_requests.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_descriptor.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_hooks.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_reports.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_reports.h</file>
+      <file>$PROJ_DIR$\..\APPLICATION\zid_usb.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\Components\rcn\rcn_config.c</file>
+      <file>$PROJ_DIR$\..\Application\zid_dongle.c</file>
+      <file>$PROJ_DIR$\..\Application\zid_usb.c</file>
+      <file>$PROJ_DIR$\..\APPLICATION\zid_dongle.h</file>
+      <file>$PROJ_DIR$\..\..\Profiles\zid\zid_ada_app_helper.c</file>
+      <file>$PROJ_DIR$\..\Application\zid_proxy.c</file>
+      <file>$PROJ_DIR$\..\APPLICATION\zid_proxy.h</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\..\..\common\cc2530\OnBoard.c</name>
+      <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 7</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 78</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\rcn\rcn_config.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 17</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 70</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Profiles\zid\zid_ada_app_helper.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 26</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 82</file>
+          <name>XLINK</name>
+          <file> 181</file>
         </tool>
       </outputs>
     </file>
@@ -186,168 +228,364 @@
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 20</file>
+          <file> 184</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 71</file>
+          <file> 145</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
+      <inputs>
         <tool>
-          <name>XLINK</name>
-          <file> 16</file>
+          <name>BICOMP</name>
+          <file> 163 104 151 160 105 16 13 61 57 94 103 127 125 77 76 15 14 17 98 113 18 12 6 9 7 120 122 11 10 8 124 178 173 203</file>
         </tool>
-      </outputs>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_class_requests.c</name>
+      <name>$PROJ_DIR$\..\..\common\cc2530\OnBoard.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 45</file>
+          <file> 111</file>
         </tool>
         <tool>
           <name>BICOMP</name>
           <file> 72</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 160 105 163 16 13 98</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Application\zid_usb.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_framework.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 50</file>
+          <file> 91</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 63</file>
+          <file> 143</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61 151 160 105 163 16 13 57 52 62 55 54 59 60 125</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Application\zid_dongle.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_standard_requests.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 25</file>
+          <file> 116</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 76</file>
+          <file> 67</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 104 151 160 105 16 13 61 57 62 55 52 54 59</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\usb_interrupt.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 6</file>
+          <file> 134</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 74</file>
+          <file> 141</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61 151 160 105 163 16 13 57 56 55</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_hooks.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\usb_suspend.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 18</file>
+          <file> 29</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 64</file>
+          <file> 45</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61 151 160 105 163 16 13 57 54 55 56 60 125 98</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_adc.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101 104 151 160 105 163 16 13 61 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_descriptor_parser.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 139</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 55 61 151 160 105 163 16 13 57 52</file>
+        </tool>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\Components\hal\common\hal_drivers.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 21</file>
+          <file> 183</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 79</file>
+          <file> 73</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 127 125 105 77 76 94 101 104 151 160 16 13 61 57 155 74 95 96 97 103 189 98 190 150 126 12</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_reports.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\rti\rti.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 15</file>
+          <file> 27</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 65</file>
+          <file> 106</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99 97 104 151 160 105 163 16 13 61 57 74 127 125 77 76 15 14 113 41 11 12 18 6 122 120 173 8 124 178 118 176 148</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_descriptor.c</name>
+      <name>$PROJ_DIR$\..\..\Profiles\zid\zid_adaptor.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 58</file>
+          <file> 36</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 77</file>
+          <file> 80</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125 163 105 173 127 77 76 113 120 122 11 12 41 160 16 13 18 6 42 40 124 178 176</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Application\zid_proxy.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\rti\rti_testmode.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 8</file>
+          <file> 117</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 81</file>
+          <file> 180</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\common\hal_assert.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 56</file>
-        </tool>
+      <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 62</file>
+          <file> 163 160 105 16 13 18 12 6 120 122 11 41</file>
         </tool>
-      </outputs>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_aes.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 61</file>
+          <file> 31</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 121</file>
+          <file> 50</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127 125 163 105 77 76 150 126 12 155 104 151 160 16 13 61 57</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_descriptor_parser.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_ccm.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 140</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127 125 163 105 77 76 150 126 12 19 155 104 151 160 16 13 61 57 99</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_dma.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 105 155 104 151 160 16 13 61 57 189</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_flash.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151 160 105 163 16 13 61 57 155 104 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_key.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104 151 160 105 163 16 13 61 57 94 95 127 125 77 76 56 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_led.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 90</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 160 105 163 16 13 94 97 104 151 61 57 127 125 77 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_sleep.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 114</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151 160 105 163 16 13 61 57 94 98 1 104 4 18 12 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_startup.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
@@ -355,176 +593,117 @@
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 80</file>
+          <file> 87</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104 151 160 105 163 16 13 61 57</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_dma.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_uart.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 54</file>
+          <file> 112</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 119</file>
+          <file> 86</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151 160 105 163 16 13 61 57 189 104</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_key.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_vddmon.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 37</file>
+          <file> 25</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 11</file>
+          <file> 186</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\usb_suspend.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 59</file>
-        </tool>
+      <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 116</file>
+          <file> 101 104 151 160 105 163 16 13 61 57 98 190</file>
         </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_ccm.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 52</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 118</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_framework.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 35</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 69</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\usb_interrupt.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 46</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 67</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\library\usb_standard_requests.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 42</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 73</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_flash.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 48</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 120</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_adc.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 60</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 117</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_sleep.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 40</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_startup.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 53</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 31</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_led.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 34</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 9</file>
-        </tool>
-      </outputs>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Clock.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 41</file>
+          <file> 115</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 23</file>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125 163 105 17 160 16 13 98 127 77 76 147</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 89</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 40 125 163 105 127 77 76 15 14 147 17 160 16 13 98 99 94</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Memory.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 135</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125 163 105 127 77 76 17 160 16 13 98 99</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\osal\mcu\cc2530\OSAL_Math.s51</name>
+      <outputs>
+        <tool>
+          <name>A8051</name>
+          <file> 142</file>
         </tool>
       </outputs>
     </file>
@@ -533,165 +712,304 @@
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 38</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 32</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\rti\rti_testmode.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 43</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 14</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\rti\rti.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 57</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 5</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 33</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 29</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_uart.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
           <file> 39</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 30</file>
+          <file> 88</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Memory.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 47</file>
-        </tool>
+      <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 4</file>
+          <file> 125 163 105 17 160 16 13 98 127 77 76 15 14</file>
         </tool>
-      </outputs>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\Components\osal\mcu\cc2530\osal_snv.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 44</file>
+          <file> 132</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 27</file>
+          <file> 83</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101 104 151 160 105 163 16 13 61 57 102 74 125 127 77 76 113 99 12</file>
+        </tool>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\Components\osal\common\OSAL_Timers.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 49</file>
+          <file> 137</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 13</file>
+          <file> 130</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Profiles\zid\zid_common.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 75</file>
-        </tool>
+      <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 10</file>
+          <file> 125 163 105 17 160 16 13 98 127 77 76 103 104 151 61 57</file>
         </tool>
-      </outputs>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\Profiles\gdp\gdp.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 36</file>
+          <file> 92</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 19</file>
+          <file> 182</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125 163 105 118 173 120 122 11 12 127 77 76 113 41 160 16 13 18 6</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\osal\mcu\cc2530\OSAL_Math.s51</name>
+      <name>$PROJ_DIR$\..\..\Profiles\zid\zid_common.c</name>
       <outputs>
         <tool>
-          <name>A8051</name>
+          <name>ICC8051</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 109</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42 40 125 163 105 99 127 77 76 14 113 41 11 12 160 16 13 18 6 120 122 124 178 173 146 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\common\hal_assert.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99 163 104 151 160 105 16 13 61 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
           <file> 68</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 194 54 55 61 151 160 105 163 16 13 57 192 198 178 125 173 56 60</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Profiles\zid\zid_adaptor.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_class_requests.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
+          <file> 133</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
           <file> 66</file>
         </tool>
+      </outputs>
+      <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 24</file>
+          <file> 62 55 61 151 160 105 163 16 13 57 54 194 198 178 125 173 176 41 11 12 18 6 120 122 199 203 206 77</file>
         </tool>
-      </outputs>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2531HID_NPI\hal_vddmon.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_descriptor.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 55</file>
+          <file> 28</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 22</file>
+          <file> 71</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125 163 105 62 55 61 151 160 16 13 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_hooks.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 185</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 194 54 55 61 151 160 105 163 16 13 57 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\hal\target\cc2531hid_npi\usb\class_zid\usb_zid_reports.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 179</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 160 105 163 16 13 194 54 55 61 151 57 198 178 125 173</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\Components\rcn\rcn_config.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 144</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 78 105 151 160 16 13 61 57 159 3 1 104 4 18 12 6 0 2 5 99 11 41</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Application\zid_dongle.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125 163 105 99 95 104 151 160 16 13 61 57 97 17 98 127 77 76 14 113 120 122 11 12 41 18 6 124 178 173 176 203 206 198 199 42 40 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Application\zid_usb.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125 163 105 99 127 77 76 113 120 122 11 12 41 160 16 13 18 6 62 55 61 151 57 54 192 198 178 173 194 56 60 176 206 199 203</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Profiles\zid\zid_ada_app_helper.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 82</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125 163 105 127 77 76 120 122 11 12 176 41 160 16 13 18 6 178 173</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Application\zid_proxy.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42 40 125 163 105 99 97 104 151 160 16 13 61 57 127 77 76 113 120 122 11 12 41 18 6 124 178 173 75 176 206 198 203 199 194</file>
+        </tool>
+      </inputs>
     </file>
   </configuration>
   <configuration>

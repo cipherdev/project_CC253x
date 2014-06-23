@@ -1,6 +1,5 @@
 /*
   Filename:       hal_mcu.h
- 
 */
 #ifndef _HAL_MCU_H
 #define _HAL_MCU_H

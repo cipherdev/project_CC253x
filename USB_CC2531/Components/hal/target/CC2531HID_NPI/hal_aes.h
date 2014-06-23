@@ -1,6 +1,5 @@
 /*
   Filename:       hal_aes.h
- 
 */
 
 #ifndef     HAL_AES_H_

@@ -1,6 +1,5 @@
 /*
   Filename:       hal_adc.h
-
 */
 
 #ifndef HAL_ADC_H

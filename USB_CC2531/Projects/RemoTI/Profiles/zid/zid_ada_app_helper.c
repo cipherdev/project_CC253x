@@ -1,6 +1,5 @@
 /*
   Filename:       zid_ada_app_helper.c
-
 */
 
 

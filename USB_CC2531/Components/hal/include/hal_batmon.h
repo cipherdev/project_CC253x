@@ -1,6 +1,5 @@
 /*
   Filename:       hal_batmon.h
-
 */
 #ifndef HAL_BATMON_H
 #define HAL_BATMON_H

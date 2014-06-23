@@ -1,6 +1,5 @@
 /*
   Filename:       hal_uart.h
-
 */
 
 #ifndef HAL_UART_H

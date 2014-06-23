@@ -1,6 +1,5 @@
 /*
   Filename:       hal_dma.h
- 
 */
 
 #ifndef HAL_DMA_H

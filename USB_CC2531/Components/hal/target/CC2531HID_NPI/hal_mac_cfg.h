@@ -1,6 +1,5 @@
 /*
   Filename:       hal_mac_cfg.h
-
 */
 
 #ifndef HAL_MAC_CFG_H

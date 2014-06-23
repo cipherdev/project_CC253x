@@ -1,6 +1,5 @@
 /*
   Filename:       zid_usb.h
-
 */
 #ifndef ZID_USB_H
 #define ZID_USB_H

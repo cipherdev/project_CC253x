@@ -1,6 +1,5 @@
 /*
   Filename:       hal_drivers.h
-
 */
 #ifndef HAL_DRIVER_H
 #define HAL_DRIVER_H

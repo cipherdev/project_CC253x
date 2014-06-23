@@ -1,6 +1,5 @@
 /*
   Filename:       hal_key.h
-
 */
 
 #ifndef HAL_KEY_H

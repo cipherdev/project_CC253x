@@ -1,6 +1,5 @@
 /*
   Filename:       zid_dongle.h
-
 */
 #ifndef ZID_DONGLE_H
 #define ZID_DONGLE_H
